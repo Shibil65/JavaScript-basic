@@ -8,20 +8,23 @@
 </head>
 
 <body>
+
+    <h2>JavaScript Regular Expressions</h2>
+
+    <h2>Using String search() with a Regular Expression</h2>
+
+    <p>Search a string for "wschools", and display the position of the match:</p>
+    <p id="demo"></p>
+
+
     <script>
-        //assign
+        let text = "Visit W3Scholls!";
 
-        let a = 10;
-        document.write(a);
-        document.write("<br>")
-        let c = a %= 3;
-        document.write(c);
-        document.write("<br>")
+        let n = text.search(/w3Schools/i);
 
-        a = 20;
-        let r = a *= 2;
-        document.write(r);
+        document.getElementById("demo").innerHTML = n;
     </script>
+
 </body>
 
 </html>

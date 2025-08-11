@@ -8,40 +8,53 @@
 </head>
 
 <body>
+    <!---
+
+Real Life Objects
+In real life, objects are things like: houses, cars, people, animals, or any other subjects.
+
+Here is a car object example:
+
+------Car Object	-
+
+----Properties	
+	
+car.name = Fiat
+
+car.model = 500
+
+car.weight = 850kg
+
+car.color = white	
 
 
+----Methods
+
+car.start()
+
+car.drive()
+
+car.brake()
+
+car.stop()
+
+-->
+
+    <h1>Creating javascript oject</h1>
+
+    <p id="demo"></p>
 
     <script>
-        // Data Types
+        const person = {
+            firstName: "john",
+            lastName: "doe",
+            age: 50,
+            eyecolor: "blue",
+        };
 
-        // Number
-        const num = 10;
-        document.write(num);
-        document.write("<br>");
-        document.write(typeof num);
-        document.write("<br>")
-
-        // string
-        let str = "it a string";
-        document.write(str);
-        document.write("<br>");
-        document.write(typeof str);
-        document.write("<br>")
-
-        // boolean
-        let num1 = true;
-        document.write(typeof num1);
-        document.write("<br>")
-
-        // undifined
-        let num2;
-        document.write(typeof num2);
-        document.write("<br>")
-
-        // null
-        const a = null;
-        document.write(a)
+        document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " Years old"
     </script>
+
 </body>
 
 </html>
