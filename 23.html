@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>The entries() method</h2>
+
+    <p>The entries() method returns an iterator with [value,value] pairs from a set</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const letters = new Set(["a", "b", "c"]);
+
+        const iterator = letters.entries();
+
+        let text = "";
+        for (const entry of iterator) {
+            text += entry + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        const obj = {
+            a: 1,
+            b: 2,
+            c: 3
+        };
+
+        const entries = Object.entries(obj);
+        console.log(entries);
+    </script>
+</body>
+
+</html>

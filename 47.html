@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--  
+The Rest Property
+You can end a destructuring syntax with a rest property.
+This syntax will store all remaining values into a new array:  
+-->
+
+    <h2>Array Destructuring using REST property</h2>
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [10, 20, 30, 40, 50, 60, 70];
+
+        const [a, b, ...rest] = numbers;
+        document.getElementById("demo").innerHTML = "<p>a is " + a + "<p> is " + b + "<p>the rest is" + rest;
+    </script>
+
+</body>
+
+</html>

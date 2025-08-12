@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>The values() method</h2>
+
+    <p>
+        The values() method returns an iteractor object with all the values in a set.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+        const letters = new Set(["a", "b", "c"]);
+
+        const myIterator = letters.keys();
+
+        let text = "";
+        for (const x of myIterator) {
+            text += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        const obj = {
+            a: 1,
+            b: 2,
+            c: 3
+        };
+        const values = Object.values(obj);
+        console.log(values);
+    </script>
+</body>
+
+</html>
