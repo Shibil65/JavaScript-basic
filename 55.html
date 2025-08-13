@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--   
+JavaScript Modules
+
+Modules
+JavaScript modules allow you to break up your code into separate files.
+
+This makes it easier to maintain a code-base.
+
+Modules are imported from external files with the import statement.
+
+Modules also rely on type="module" in the <script> tag.   
+
+-->
+
+<h2>JavaScript Modules</h2>
+
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<script type="module">
+
+    import {message, greet } from "./message.js";
+
+    document.getElementById("demo1").innerHTML = message();
+
+    document.getElementById("demo2").innerHTML = greet("shibil ",21);
+</script>
+</body>
+</html>

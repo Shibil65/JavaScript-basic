@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--  
+JavaScript Classes
+
+ECMAScript 2015, also known as ES6, introduced JavaScript Classes.
+
+JavaScript Classes are templates for JavaScript Objects.
+
+JavaScript Class Syntax
+Use the keyword class to create a class.
+
+Always add a method named constructor():  
+
+Syntax
+
+class ClassName {
+  constructor() { ... }
+}
+-->
+
+
+<h2>JavaScript Classes</h2>
+
+<p>Creating two car object from a class:</p>
+
+<p id="demo"></p>
+    
+
+<script>
+
+    class car {
+        constructor(name,year){
+            this.name = name;
+            this.year = year;
+        }
+    }
+
+    const myCar1 = new car("Ford",2014);
+    const myCar2 = new car("Audi",2019);
+
+    document.getElementById("demo").innerHTML = myCar1.name + " " + myCar2.name;
+</script>
+</body>
+</html>

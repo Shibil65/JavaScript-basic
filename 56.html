@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Create item</h2>
+
+<button onclick="createItem()">Create local storage</button>
+    
+<h2>Remove Item</h2>
+
+<button onclick="deleteItem()">Delete Item</button>
+
+<h2>Display Item</h2>
+
+<button onclick="displayItem()">Display Item</button>
+
+<p id="demo"></p>
+
+<script>
+
+    function createItem (){
+        localStorage.mytime = Date.now();
+    }
+
+    function deleteItem (){
+        localStorage.removeItem("mytime");
+    }
+
+    function displayItem(){
+        let x = localStorage.getItem("mytime");
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
