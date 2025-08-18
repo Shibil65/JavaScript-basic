@@ -9,24 +9,18 @@
 
 <body>
 
-    <p>A loop with a <b>continue</b> statement. </p>
-
-    <p>A loop which will skip the step where i = 3</p>
-
+    <h2>The Findindex() method</h2>
     <p id="demo"></p>
 
     <script>
-        let text = "";
+        const num = [4, 9, 16, 25, 29];
+        let first = num.findIndex(myFunction);
 
-        for (let i = 0; i < 10; i++) {
-            if (i === 3) {
-                continue;
-            }
+        document.getElementById("demo").innerHTML = "First number over 18 has index " + first;
 
-            text += "the number is " + i + "<br>";
+        function myFunction(value) {
+            return value > 18
         }
-
-        document.getElementById('demo').innerHTML = text;
     </script>
 </body>
 

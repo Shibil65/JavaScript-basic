@@ -8,9 +8,20 @@
 </head>
 
 <body>
+    <h2>The Splice() method <br>-- adds new items to an array</h2>
 
+    <p id="demo"></p>
+    <p id="demo2"></p>
 
+    <script>
+        const fruits = ["banana", "orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
 
+        fruits.splice(2, 0, "lemon", "kiwi");
+
+        //2--adding index //// 0 --- count of items should be removed
+        document.getElementById("demo2").innerHTML = fruits
+    </script>
 </body>
 
 </html>

@@ -8,24 +8,15 @@
 </head>
 
 <body>
+
+    <h2>remove last two items from array using splice</h2>
+    <p id="demo"></p>
+
+
     <script>
-        let i = 1;
-        while (i <= 10) {
-            document.write(i + "<br>");
-            i++;
-        }
-
-        let x = 1
-        while (x <= 5) {
-            document.write("Hello" + "<br>");
-            x++;
-        }
-
-        let y = 10;
-        while (y >= 1) {
-            document.write(y + "<br>");
-            y--;
-        }
+        const fruits = ["banana", "orange", "Apple", "Mango"];
+        fruits.slpice(-2, 2);
+        document.getElementById("demo").innerHTML = fruits;
     </script>
 </body>
 

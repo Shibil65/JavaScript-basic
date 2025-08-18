@@ -8,35 +8,16 @@
 </head>
 
 <body>
-    <!--  
+    <h2>Last indexOf() method</h2>
 
-The While Loop
-
-The while loop loops through a block of code as long as a specified condition is true.
-
-Syntax
-
-while (condition) {
-  // code block to be executed
-}
-
--->
-
-    <h2>Js while loop</h2>
     <p id="demo"></p>
 
-
     <script>
-        let text = "";
+        const fruits = ["Apple", "orange", "Apple", "Mango"];
 
-        let i = 0;
+        let position = fruits.lastIndexOf("Apple") + 1;
 
-        while (i < 10) {
-            text += "<br> The number is " + i;
-
-            i++;
-        }
-        document.getElementById('demo').innerHTML = text;
+        document.getElementById("demo").innerHTML = "Apple is found in position " + position;
     </script>
 </body>
 

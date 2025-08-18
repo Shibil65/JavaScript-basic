@@ -9,20 +9,18 @@
 
 <body>
 
-    <h2>JavaScript Regular Expressions</h2>
-
-    <h2>Using String search() with a Regular Expression</h2>
-
-    <p>Search a string for "wschools", and display the position of the match:</p>
+    <h2>Shift() method</h2>
+    <!-- the shift method remove the first elemant of array -->
     <p id="demo"></p>
-
+    <p id="demo2"></p>
 
     <script>
-        let text = "Visit W3Scholls!";
+        const fruits = ["banana", "apple", "orange", "Mango"];
 
-        let n = text.search(/w3Schools/i);
+        document.getElementById("demo").innerHTML = fruits;
 
-        document.getElementById("demo").innerHTML = n;
+        fruits.shift();
+        document.getElementById("demo2").innerHTML = fruits;
     </script>
 
 </body>

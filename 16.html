@@ -8,21 +8,16 @@
 </head>
 
 <body>
-    <h2>Javascript iterables</h2>
-    <h2>Iterable over a string</h2>
-
+    <h2>The findlast() method</h2>
     <p id="demo"></p>
 
     <script>
-        const name = "corpus datahub";
+        const temp = [27, 28, 30, 40, 42, 35, 47, 50, 38];
+        let high = temp.findLast((x) => x > 40);
 
-        let text = "";
-        for (const x of name) {
-            text += x + "<br>";
-        }
-
-        document.getElementById('demo').innerHTML = text
+        document.getElementById("demo").innerHTML = "The last temparature over 40 was " + high;
     </script>
+
 </body>
 
 </html>

@@ -8,10 +8,17 @@
 </head>
 
 <body>
+    <h2>push() method</h2>
     <p id="demo"></p>
+    <p id="demo2"></p>
 
     <script>
-        let text1 = "    hello world     "
+        const fruits = ["banana", "apple", "orange", "Mango"];
+
+        document.getElementById("demo").innerHTML = fruits;
+
+        fruits.push("Kiwi");
+        document.getElementById("demo2").innerHTML = fruits;
     </script>
 </body>
 

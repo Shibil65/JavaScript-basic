@@ -8,22 +8,15 @@
 </head>
 
 <body>
+    <h2>The Slice() method </h2>
+    The slice method slice out of a piece of an array
+    <p id="demo"></p>
+
     <script>
-        for (i = 1; i <= 5; i++) {
-            document.write("hello" + "<br>")
-        }
-
-        document.write("<br>")
-
-        for (i = 1; i <= 10; i++) {
-            document.write(i + "<br>")
-        }
-
-        document.write("<br>")
-
-        for (i = 10; i >= 1; i--) {
-            document.write(i + "<br>")
-        }
+        const fruits = ["banana", "orange", "Apple", "Mango"];
+        const citrus = fruits.slice(1);
+        //starting index from where slicing starts
+        document.getElementById("demo").innerHTML = citrus
     </script>
 </body>
 

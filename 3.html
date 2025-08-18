@@ -8,17 +8,18 @@
 </head>
 
 <body>
+    <h2>Pop() method</h2>
+
     <p id="demo"></p>
+    <p id="demo2"></p>
 
     <script>
-        const person = new Object();
-        firstName: "john";
-        lastName: "doe";
-        age: 50;
-        eyecolor: "blue";
+        const fruits = ["banana", "apple", "orange", "kiwi"];
 
+        document.getElementById("demo").innerHTML = fruits;
 
-        document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " Years old"
+        fruits.pop();
+        document.getElementById("demo2").innerHTML = fruits;
     </script>
 </body>
 
