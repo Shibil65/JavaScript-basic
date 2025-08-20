@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+
+The if Statement
+
+Use the if statement to specify a block of JavaScript code 
+to be executed if a condition is true.
+
+Syntax
+if (condition) {
+  // block of code to be executed if the condition is true
+}    
+-->
+
+    <h2>Js If</h2>
+    <p>Display "Good Day!" if the hour is less than 18:00</p>
+
+    <p id="demo">Good Evening!</p>
+
+
+    <script>
+        if (new Date().getHours() < 18) {
+            document.getElementById('demo').innerHTML = "Good Day!"
+        }
+    </script>
+
+
+
+</body>
+
+</html>

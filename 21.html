@@ -8,21 +8,20 @@
 </head>
 
 <body>
-    <h2>The forEach() method</h2>
-    <p>forEach() calls a function for each elements in a set</p>
-
+    <h2>The toReversed() method</h2>
     <p id="demo"></p>
 
 
     <script>
-        const letters = new Set(["a", "b", "c"]);
+        const month = ["Jan", "Feb", "Mar", "Apr"];
+        const reverse = month.toReversed();
+        document.getElementById("demo").innerHTML = reverse;
 
-        let text = "";
-        letters.forEach(function(value) {
-            text += value + "<br>";
 
-        })
-        document.getElementById("demo").innerHTML = text;
+        //The difference between toReversed() and reverse()
+        // is that the first method (toReversed()) creates a new array,
+        //keeping the original array unchanged,
+        // while the  method  (reverse())  alters the original array.
     </script>
 </body>
 

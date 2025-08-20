@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>The from() method</h2>
+
+    <p>The array.from() method in JavaScript is a built-in method that creates a new array from an array-like or iterable object, such as a string , set , map, or Nodlist . it allowes you to convert those object into array so you can use array methods like
+        map() , filter(), etc.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+        const myarr = Array.from("ABCDEFG"); //convert a string to an array
+
+        document.getElementById('demo').innerHTML = myarr;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>The every() method</h2>
+
+    <p>The every() method checks if all array values pass a test. </p>
+
+    <p id="demo"></p>
+
+    <script>
+        const num = [45, 4, 9, 16, 25];
+
+        let allover18 = num.every((x) => x > 18);
+
+        document.getElementById('demo').innerHTML = "all over 18 is " + allover18;
+    </script>
+
+
+</body>
+
+</html>

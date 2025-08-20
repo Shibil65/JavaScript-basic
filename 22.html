@@ -9,32 +9,21 @@
 
 <body>
 
-    <h2>The values() method</h2>
-
-    <p>
-        The values() method returns an iteractor object with all the values in a set.
-    </p>
+    <h2>forEach() memthod</h2>
+    <p>Call a function once for each array elements</p>
 
     <p id="demo"></p>
 
     <script>
-        const letters = new Set(["a", "b", "c"]);
-
-        const myIterator = letters.keys();
-
+        const number = [45, 4, 9, 16, 25];
         let text = "";
-        for (const x of myIterator) {
-            text += x + "<br>";
-        }
+        number.forEach(myFunction);
+
         document.getElementById("demo").innerHTML = text;
 
-        const obj = {
-            a: 1,
-            b: 2,
-            c: 3
-        };
-        const values = Object.values(obj);
-        console.log(values);
+        function myFunction(value) {
+            text += value + "<br>";
+        }
     </script>
 </body>
 

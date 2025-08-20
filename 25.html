@@ -8,17 +8,18 @@
 </head>
 
 <body>
-    <h2>reverse() method</h2>
     <p id="demo"></p>
-    <p id="demo2"></p>
 
     <script>
-        const fruit = ["banana", "orange", "apple", "mango"];
+        const array = [
+            [1, 2],
+            [3, 4],
+            [5, 6]
+        ];
 
-        document.getElementById("demo").innerHTML = fruit;
+        const newArr = array.flatMap((x) => x.map(y => y * 2));
 
-        fruit.reverse();
-        document.getElementById("demo2").innerHTML = fruit;
+        document.getElementById("demo").innerHTML = newArr;
     </script>
 </body>
 

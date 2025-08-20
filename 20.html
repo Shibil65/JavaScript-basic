@@ -9,17 +9,20 @@
 
 <body>
 
-    <h2>The has() method</h2>
-    <p>The has() method returns true if a set contains a specific value.</p>
+    <h2>The toSorted() method</h2>
     <p id="demo"></p>
 
 
     <script>
-        const letters = new Set(["a", "b", "c"]);
+        const month = ["Jan", "Feb", "Mar", "Apr"];
+        const sorted = month.toSorted();
+        document.getElementById("demo").innerHTML = sorted;
 
-        answer = letters.has("a");
 
-        document.getElementById("demo").innerHTML = answer;
+        //The difference between toSorted() and sort()
+        // is that the first method (toSorted()) creates a new array,
+        //keeping the original array unchanged,
+        // while the  method  (sort())  alters the original array.
     </script>
 </body>
 

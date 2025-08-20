@@ -9,32 +9,25 @@
 
 <body>
 
-    <h2>The entries() method</h2>
+    <h2>The map() Method</h2>
 
-    <p>The entries() method returns an iterator with [value,value] pairs from a set</p>
+    <p>The map() method create a new array by performing a function on each array element. <br> The map() method does not execute the function for array elements without values. <br> The map() method does not change the original array. </p>
 
     <p id="demo"></p>
 
     <script>
-        const letters = new Set(["a", "b", "c"]);
+        const num = [45, 4, 9, 16, 25];
 
-        const iterator = letters.entries();
+        const number = num.map(myfunction);
 
-        let text = "";
-        for (const entry of iterator) {
-            text += entry + "<br>";
+        document.getElementById("demo").innerHTML = number;
+
+        function myfunction(value) {
+            return value * 2;
         }
-        document.getElementById("demo").innerHTML = text;
-
-        const obj = {
-            a: 1,
-            b: 2,
-            c: 3
-        };
-
-        const entries = Object.entries(obj);
-        console.log(entries);
     </script>
+
+
 </body>
 
 </html>

@@ -8,18 +8,22 @@
 </head>
 
 <body>
-    <h2>reverse() method</h2>
+
+    <h2>The filter() method</h2>
+
+    <p>Create a new array from all array elements that passes a test: </p>
+
     <p id="demo"></p>
-    <p id="demo2"></p>
 
     <script>
-        const fruit = ["banana", "orange", "apple", "mango"];
+        const num = [45, 4, 9, 16, 25];
 
-        document.getElementById("demo").innerHTML = fruit;
+        const over18 = num.filter((x) => x > 18);
 
-        fruit.reverse();
-        document.getElementById("demo2").innerHTML = fruit;
+        document.getElementById('demo').innerHTML = over18;
     </script>
+
+
 </body>
 
 </html>

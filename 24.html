@@ -9,38 +9,20 @@
 
 <body>
 
-    <!----    
-JavaScript Maps
-A Map holds key-value pairs where the keys can be any datatype.
+    <h2>The flatMap() method</h2>
 
-A Map remembers the original insertion order of the keys.
+    <p>The flatMap() method first map all elements of an array <br> and then create a new array by flattening the array.</p>
 
-How to Create a Map
-You can create a JavaScript Map by:
-
-Passing an Array to new Map()
-Create a Map and use Map.set()
-
--->
-
-    <h2>JavaScript new Map() method</h2>
-
-    <p>Creating a mao from an array</p>
     <p id="demo"></p>
 
-
     <script>
-        const fruits = new Map([
-            ["apple", 500],
-            ["banana", 300],
-            ["orange", 200]
-        ]);
+        const myarr = [1, 2, 3, 4, 5, 6];
 
-        console.log(fruits);
+        const newArr = myarr.flatMap((x) => x * 2);
 
-        let numb = fruits.get("apple");
-        document.getElementById("demo").innerHTML = "The are " + numb + " apples."
+        document.getElementById("demo").innerHTML = newArr;
     </script>
+
 </body>
 
 </html>

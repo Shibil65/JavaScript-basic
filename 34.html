@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Ternory operator with 3 condition</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 10;
+
+        let result = (x < 10) ?
+            "Less than 10" : (x >= 10) && (x <= 20) ?
+            "Between 10 and 20" : "Greater than 20";
+
+        document.getElementById('demo').innerHTML = result
+    </script>
+
+</body>
+
+</html>
